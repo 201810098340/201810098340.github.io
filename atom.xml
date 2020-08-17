@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  <icon>http://yoursite.com/icon.png</icon>
+  
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-08-17T05:34:52.196Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springboot实现逻辑删除</title>
+    <link href="http://yoursite.com/2020/08/17/springboot%E5%AE%9E%E7%8E%B0%E9%80%BB%E8%BE%91%E5%88%A0%E9%99%A4/"/>
+    <id>http://yoursite.com/2020/08/17/springboot%E5%AE%9E%E7%8E%B0%E9%80%BB%E8%BE%91%E5%88%A0%E9%99%A4/</id>
+    <published>2020-08-17T05:22:21.000Z</published>
+    <updated>2020-08-17T05:34:52.196Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;springboot编写逻辑删除&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="springboot实现逻辑删除demo,springboot" scheme="http://yoursite.com/tags/springboot%E5%AE%9E%E7%8E%B0%E9%80%BB%E8%BE%91%E5%88%A0%E9%99%A4demo-springboot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/02/24/hello-world/"/>
+    <id>http://yoursite.com/2020/02/24/hello-world/</id>
+    <published>2020-02-24T11:46:06.622Z</published>
+    <updated>2020-08-17T05:35:06.926Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
