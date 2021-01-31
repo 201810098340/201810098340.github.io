@@ -141,4 +141,42 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>window快捷键及dos命令</title>
+    <url>/2021/01/31/window%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%8F%8Ados%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>记录一下window常用的快捷键以及一些dos命令</p>
+<a id="more"></a>
+
+<h2 id="一-常用快捷键"><a href="#一-常用快捷键" class="headerlink" title="一.常用快捷键"></a>一.常用快捷键</h2><p><strong>Ctrl+a</strong> 全选</p>
+<p><strong>Ctrl+c</strong> 复制</p>
+<p><strong>Ctrl+d</strong> 删除</p>
+<p><strong>Ctrl+f</strong> 查找 </p>
+<p><strong>Ctrl+k</strong> 设置为超链接 </p>
+<p><strong>Ctrl+s</strong> 保存 </p>
+<p><strong>Ctrl+u</strong> 下划线 </p>
+<p><strong>Ctrl+v</strong>  粘贴 </p>
+<p><strong>Ctrl+x</strong> 剪切</p>
+<p><strong>Ctrl+y</strong>反撤销</p>
+<p><strong>Ctrl+z</strong>撤销</p>
+<p><strong>Ctrl+Shift+Delete</strong>打开后台管理器</p>
+<p><strong>Win+E</strong> 打开“我的电脑”</p>
+<p><em>**Win+R</em> **打开“运行窗口”</p>
+<p><strong>f2</strong> 重命名</p>
+<h2 id="二-打开CMD的方式"><a href="#二-打开CMD的方式" class="headerlink" title="二.打开CMD的方式"></a>二.打开CMD的方式</h2><ol>
+<li><p>开始菜单+系统+命令提示符</p>
+</li>
+<li><p>Win+R 输入cmd打开控制台（推荐使用）</p>
+</li>
+<li><p>资源管理器（我的电脑的任意目录）的地址栏输入cmd</p>
+<p><img src="https://gitee.com/summer502/img/raw/master/images/cmd%E6%88%AA%E5%9B%BE.PNG" alt=""></p>
+</li>
+</ol>
+<h2 id="三-常见Dos命令"><a href="#三-常见Dos命令" class="headerlink" title="三.常见Dos命令"></a>三.常见Dos命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">盘符切换    盘符名称+冒号（英文输入法状态下）</span><br><span class="line">产看当前目录下的所有文件     dir</span><br><span class="line">切换目录   <span class="built_in">cd</span>+空格+目录名称</span><br><span class="line">         <span class="built_in">cd</span>+/d+空格+盘符名称+冒号 （/d可以实现跨盘符操作）</span><br><span class="line">         <span class="built_in">cd</span>+/d+空格+盘符名称+冒号+\+文件夹名称（可以实现在某一个盘符内跳转到另外一个盘符的制定文件夹下）          <span class="built_in">cd</span>+空格+..  (返回上一级)</span><br><span class="line">清理屏幕    cls</span><br><span class="line">退出终端    <span class="built_in">exit</span></span><br><span class="line">查看电脑IP  ipconfig</span><br><span class="line">打开应用    calc  计算器</span><br><span class="line">            mapaint  绘图工具</span><br><span class="line">            notepad  记事本</span><br><span class="line">ping命令    ping+空格+某网站的网址</span><br><span class="line">            如：ping www.baidu.com</span><br><span class="line">注：在非cmd窗口下复制的内容，在cmd窗口下，鼠标右键单击即可，即为粘贴</span><br><span class="line">创建文件夹   md+空格+文件夹名称</span><br><span class="line">创建文件     <span class="built_in">cd</span>+&gt;+文件名称及后缀</span><br><span class="line">删除文件     del+空格+文件名称及后缀</span><br><span class="line">删除文件夹    rd+空格+文件夹名称</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>windows</category>
+      </categories>
+      <tags>
+        <tag>windows</tag>
+      </tags>
+  </entry>
 </search>
