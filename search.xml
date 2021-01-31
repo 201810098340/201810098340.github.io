@@ -158,10 +158,11 @@
 <p><strong>Ctrl+x</strong> 剪切</p>
 <p><strong>Ctrl+y</strong>反撤销</p>
 <p><strong>Ctrl+z</strong>撤销</p>
-<p><strong>Ctrl+Shift+Delete</strong>打开后台管理器</p>
+<p><strong>Ctrl+Shift+Delete</strong> 打开浏览器清理缓存</p>
 <p><strong>Win+E</strong> 打开“我的电脑”</p>
-<p><em>**Win+R</em> **打开“运行窗口”</p>
+<p><strong>Win+R</strong>打开“运行窗口”</p>
 <p><strong>f2</strong> 重命名</p>
+<p><strong>Ctrl+Alt+Delete</strong>打开后台管理器</p>
 <h2 id="二-打开CMD的方式"><a href="#二-打开CMD的方式" class="headerlink" title="二.打开CMD的方式"></a>二.打开CMD的方式</h2><ol>
 <li><p>开始菜单+系统+命令提示符</p>
 </li>
