@@ -31,7 +31,7 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>springboot</tag>
+        <tag>java后端</tag>
       </tags>
   </entry>
   <entry>
@@ -287,7 +287,7 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>jdbc</tag>
+        <tag>java中级</tag>
       </tags>
   </entry>
   <entry>
@@ -452,7 +452,7 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>java</tag>
+        <tag>java基础</tag>
       </tags>
   </entry>
   <entry>
@@ -986,10 +986,10 @@ whlie
 <h4 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h4><p>打印三角形</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">5</span>; j &gt;=i; j--) &#123;</span><br><span class="line">                    System.out.print(<span class="string">" "</span>);</span><br><span class="line">        &#125;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;=i; j++)&#123;</span><br><span class="line">                System.out.print(<span class="string">"*"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i; j++)&#123;</span><br><span class="line">                    System.out.print(<span class="string">"*"</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>java基础</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>java基础之流程控制</tag>
+        <tag>java基础</tag>
       </tags>
   </entry>
   <entry>
@@ -1267,10 +1267,10 @@ whlie
 </ul>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[][] array1 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">11</span>][<span class="number">11</span>];<span class="comment">//0代表空，1代表黑子，2代表白子</span></span><br><span class="line">    array1[<span class="number">1</span>][<span class="number">2</span>] = <span class="number">1</span>;<span class="comment">//给黑子定位</span></span><br><span class="line">    array1[<span class="number">2</span>][<span class="number">3</span>] = <span class="number">2</span>;<span class="comment">//给白子定位</span></span><br><span class="line">    <span class="comment">//输出原始数据</span></span><br><span class="line">    System.out.println(<span class="string">"原始数据:"</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span>[] ints : array1) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> anInt : ints) &#123;</span><br><span class="line">            System.out.print(anInt+<span class="string">" "</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">"======================"</span>);</span><br><span class="line">    <span class="comment">//转换为稀疏数组保存</span></span><br><span class="line">    <span class="comment">//1.求和有效值的个数</span></span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array1.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; array1.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array1[i][j]!=<span class="number">0</span>)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">"稀疏数组："</span>);</span><br><span class="line">    <span class="comment">//2.创建一个稀疏数组的数组</span></span><br><span class="line">    <span class="keyword">int</span>[][] array2 = <span class="keyword">new</span> <span class="keyword">int</span> [sum+<span class="number">1</span>][<span class="number">3</span>];<span class="comment">//确定第一条稀疏数组的数据</span></span><br><span class="line">    array2[<span class="number">0</span>][<span class="number">0</span>]= <span class="number">11</span>;</span><br><span class="line">    array2[<span class="number">0</span>][<span class="number">1</span>]= <span class="number">11</span>;</span><br><span class="line">    array2[<span class="number">0</span>][<span class="number">2</span>]= sum;</span><br><span class="line">    <span class="comment">//3.将非零的值，存放在稀疏数组中</span></span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;array1.length ; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;array1.length ; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array1[i][j] != <span class="number">0</span>)&#123;</span><br><span class="line">                count++;</span><br><span class="line">                array2[count][<span class="number">0</span>] = i;</span><br><span class="line">                array2[count][<span class="number">1</span>] = j;</span><br><span class="line">                array2[count][<span class="number">2</span>] = array1[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">"序 "</span>+<span class="string">" 行 "</span>+<span class="string">" 列 "</span>+<span class="string">" 值 "</span>);<span class="comment">//打印数组</span></span><br><span class="line">    <span class="keyword">int</span> xu = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span>[] ints : array2) &#123;</span><br><span class="line">        System.out.print(xu+<span class="string">" "</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> anInt : ints) &#123;</span><br><span class="line">            <span class="keyword">if</span> (anInt&lt;<span class="number">10</span>)&#123;System.out.print(<span class="string">"  "</span>+anInt+<span class="string">" "</span>);&#125;</span><br><span class="line">            <span class="keyword">else</span> &#123; System.out.print(<span class="string">" "</span>+anInt+<span class="string">" "</span>);&#125;</span><br><span class="line">        &#125;</span><br><span class="line">        xu++;</span><br><span class="line">        System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    for (int i = 0; i &lt;array2.length ; i++) &#123;</span></span><br><span class="line"><span class="comment">        System.out.println(array2[i][0]+"\t"</span></span><br><span class="line"><span class="comment">                +array2[i][1]+"\t"</span></span><br><span class="line"><span class="comment">                +array2[i][2]+"\t");</span></span><br><span class="line"><span class="comment">    &#125;*/</span></span><br><span class="line">    System.out.println(<span class="string">"========================"</span>);</span><br><span class="line">    <span class="comment">//转换成原始数据</span></span><br><span class="line">    System.out.println(<span class="string">"还原原始数组："</span>);</span><br><span class="line">    <span class="keyword">int</span>[][] array3 = <span class="keyword">new</span> <span class="keyword">int</span>[array2[<span class="number">0</span>][<span class="number">0</span>]][array2[<span class="number">0</span>][<span class="number">1</span>]];<span class="comment">//确认原始数组整体大小</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;array2.length ; i++) &#123;</span><br><span class="line">        array3[array2[i][<span class="number">0</span>]][array2[i][<span class="number">1</span>]]=array2[i][<span class="number">2</span>];<span class="comment">//将数组的数据赋值</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span>[] ints : array3) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> anInt : ints) &#123;</span><br><span class="line">            System.out.print(anInt+<span class="string">" "</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>java基础</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>java基础之方法及数组</tag>
+        <tag>java基础</tag>
       </tags>
   </entry>
 </search>
