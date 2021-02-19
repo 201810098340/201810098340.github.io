@@ -5399,6 +5399,8 @@ System.out.println(&quot;JSON.toJavaObject(jsonObject1, User.class)==&gt;&quot;+
     <url>/2021/02/19/javaweb%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<h2 id="SMBMS-超市管理项目"><a href="#SMBMS-超市管理项目" class="headerlink" title="SMBMS(超市管理项目)"></a>SMBMS(超市管理项目)</h2><p><img src="https://gitee.com/summer502/img/raw/master/images/20210219160833.png" alt="image-20210219160831270"></p>
 <p>数据库：<br><img src="https://gitee.com/summer502/img/raw/master/images/20210219160857.png" alt="image-20210219160855911"><br><strong>项目如何搭建？</strong><br>考虑是不是用maven？ jar包，依赖</p>
+<a id="more"></a>
+
 <h3 id="搭建项目准备工作"><a href="#搭建项目准备工作" class="headerlink" title="搭建项目准备工作"></a>搭建项目准备工作</h3><ol>
 <li><p>搭建一个maven web 项目</p>
 </li>
