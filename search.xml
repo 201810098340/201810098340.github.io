@@ -6046,4 +6046,92 @@ maven编译的java程序，最后的class文件都放在target目录中
         <tag>备战秋招</tag>
       </tags>
   </entry>
+  <entry>
+    <title>git常用命令</title>
+    <url>/2021/02/28/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p><img src="https://gitee.com/summer502/img/raw/master/images/20210228113043.webp" alt="图片"></p>
+<p>git命令太多了？下面进行一一整理，记录下来方便需要时进行查看</p>
+<ul>
+<li>Workspace：工作区</li>
+<li>Index / Stage：暂存区</li>
+<li>Repository：仓库区（或本地仓库）</li>
+<li>Remote：远程仓库</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="1-初始化"><a href="#1-初始化" class="headerlink" title="1. 初始化"></a>1. 初始化</h2><ul>
+<li>在当前目录新建一个Git代码库<br><code>git init</code></li>
+<li>初始化一个新目录<br><code>git init [project-name]</code></li>
+<li>下载远程仓库的项目到本地<br><code>git clone [url]</code></li>
+</ul>
+<h2 id="2-配置"><a href="#2-配置" class="headerlink" title="2. 配置"></a>2. 配置</h2><p>配置文件分为全部配置和仓库配置，全局配置文件是 <code>~/.gitconfig</code>，当前项目配置文件是 <code>.git/config</code>。<br>我们平时主要修改的就是 <code>remote</code> 和 <code>user</code>， <code>remote</code>配置的是远程仓库地址，<code>user</code> 配置的是你提交，推送时候用的用户名和密码，也会在 log 里面看到。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">        name &#x3D; simple</span><br><span class="line">        email &#x3D; simple@126.com</span><br><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">        url &#x3D; https:&#x2F;&#x2F;github.com&#x2F;xxx&#x2F;xxx.git</span><br></pre></td></tr></table></figure>
+
+<p>针对仓库的配置可以使用如下命令进行配置，如果是全局，添加 <code>--global</code> 即可。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config user.name simple</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-添加-删除"><a href="#3-添加-删除" class="headerlink" title="3. 添加/删除"></a>3. 添加/删除</h2><ul>
+<li>添加指定文件到暂存区<br><code>git add [file1] [file2] ...</code></li>
+<li>添加指定目录到暂存区，包括子目录<br>`git add [dir]``</li>
+<li>添加当前目录的所有文件到暂存区<br><code>git add .</code></li>
+<li>逐行检查并提交，y是确定，n是取消<br><code>git add -p</code></li>
+<li>删除工作区文件，并且将这次删除放入暂存区<br><code>git rm [file1] [file2] ...</code></li>
+</ul>
+<h2 id="4-代码提交"><a href="#4-代码提交" class="headerlink" title="4. 代码提交"></a>4. 代码提交</h2><ul>
+<li>提交暂存区到仓库区，并填写备注<br><code>git commit -m [message]</code></li>
+<li>提交暂存区的指定文件到仓库区<br><code>git commit [file1] [file2] ... -m [message]</code></li>
+<li>修改上次的提交内容，需要修改没有 push 之前的提交<br><code>git commit --amend</code></li>
+<li>追加新的内容到上次没有 push 的提交<code>git commit --amend --no-edit</code></li>
+</ul>
+<h2 id="5-分支"><a href="#5-分支" class="headerlink" title="5. 分支"></a>5. 分支</h2><ul>
+<li>列出所有本地分支<br><code>git branch</code></li>
+<li>列出所有远程分支<br><code>git branch -r</code></li>
+<li>列出所有本地分支和远程分支<br><code>git branch -a</code></li>
+<li>新建一个分支，但依然停留在当前分支<br><code>git branch [branch-name]</code></li>
+<li>新建一个分支，并切换到该分支<br><code>git checkout -b [branch]</code></li>
+<li>新建一个分支，与指定的远程分支建立追踪关系<br><code>git branch --track [branch] [remote-branch]</code></li>
+<li>切换到指定分支，并更新工作区<br><code>git checkout [branch-name]</code></li>
+<li>切换到上一个分支，这个操作很常见，也很有用<br><code>git checkout -</code></li>
+<li>建立追踪关系，在现有分支与指定的远程分支之间<br><code>git branch --set-upstream [branch] [remote-branch]</code></li>
+<li>合并指定分支到当前分支<br><code>git merge [branch]</code></li>
+<li>从其他分支合并 commit<br><code>git cherry-pick [commit]</code></li>
+<li>删除本地分支<br><code>git branch -d [branch-name]</code></li>
+<li>删除远程分支<br><code>git push origin --delete [branch-name]</code></li>
+</ul>
+<h2 id="6-远程同步"><a href="#6-远程同步" class="headerlink" title="6. 远程同步"></a>6. 远程同步</h2><ul>
+<li>下载远程仓库的所有变动<br><code>git fetch [remote]</code></li>
+<li>显示所有远端仓库的配置<br><code>git remote -v</code></li>
+<li>增加一个新的远程仓库，并命名<br><code>git remote add [shortname] [url]</code></li>
+<li>更新远程分支的变化<br><code>git pull [remote] [branch]</code></li>
+<li>推送本地指定分支到远程仓库<br><code>git push [remote] [branch]</code></li>
+</ul>
+<h2 id="7-撤销"><a href="#7-撤销" class="headerlink" title="7.撤销"></a>7.撤销</h2><ul>
+<li>恢复暂存区的指定文件到工作区<br><code>git checkout [file]</code></li>
+<li>恢复暂存区的所有文件到工作区<br><code>git checkout .</code></li>
+<li>重置暂存区的指定文件，与上一次commit保持一致，但工作区不变<br><code>git reset [file]</code></li>
+<li>重置暂存区与工作区，与上一次commit保持一致<br><code>git reset --hard</code></li>
+<li>重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变<br><code>git reset [commit]</code></li>
+<li>重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致<br><code>git reset --hard [commit]</code></li>
+<li>新建一个commit，用来撤销指定commit<br><code>git revert [commit]</code></li>
+<li>暂时将未提交的变化暂存，然后再取出来<br><code>git stash</code><br><code>git stash pop</code></li>
+</ul>
+<h2 id="8-信息查询"><a href="#8-信息查询" class="headerlink" title="8. 信息查询"></a>8. 信息查询</h2><ul>
+<li>显示有变更的文件<br><code>git status</code></li>
+<li>显示历史信息<br><code>git log</code></li>
+<li>搜索提交历史，根据关键词<br><code>git log -S [keyword]</code></li>
+<li>显示某个文件的版本历史<br><code>git log --follow [file]</code></li>
+<li>显示指定文件是什么人在什么时间修改过<br><code>git blame [file]</code></li>
+<li>显示暂存区和工作区的差异<br><code>git diff</code></li>
+<li>显示某次提交的元数据和内容变化<br><code>git show [commit]</code></li>
+<li>显示某次提交时，某个文件的内容<br><code>git show [commit]:[filename]</code></li>
+</ul>
+<p>- END -</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
 </search>
